@@ -1,0 +1,76 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light Grey */
+}
+
+/* Main Container */
+.home-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Loading and Error Messages */
+.home-loading,
+.home-error {
+    text-align: center;
+    font-size: 18px;
+    color: #333; /* Dark Grey */
+    margin-top: 20px;
+}
+
+/* News List */
+.news-list {
+    margin-top: 20px;
+}
+
+.news-item {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #333; /* Dark Grey */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    margin: 0;
+    font-size: 24px;
+    color: #555; /* Medium Grey */
+    text-align: center; /* Align news title to center */
+}
+
+/* Selected News */
+.selected-news {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff; /* White */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.selected-news-title {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333; /* Dark Grey */
+    text-align: center; /* Align selected news title to center */
+}
+
+.selected-news-info {
+    margin: 10px 0;
+    color: #555; /* Medium Grey */
+}
+
+.selected-news-content {
+    margin-top: 20px;
+    color: #555; /* Medium Grey */
+}

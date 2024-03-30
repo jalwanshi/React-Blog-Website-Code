@@ -1,0 +1,1060 @@
+body{
+  background-color: #9dced3;
+}
+/* Navbar */
+.navbar {
+  background-color: #8CB9BD;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #FEFBF6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 21px;
+}
+
+.nav-link:hover {
+  background-color: #ECB159;
+  color: #B67352;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8CB9BD;
+  min-width: 120px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background-color: #ECB159;
+}
+
+.user-login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #8CB9BD;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.user-login-form h2 {
+  margin-bottom: 20px;
+  color: #FEFBF6;
+}
+
+.user-login-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #FEFBF6;
+  text-align: left;
+}
+
+.user-login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.user-login-form button {
+  width: 50%;
+  padding: 10px;
+  background-color: #FEFBF6;
+  color: #8CB9BD;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-login-form button:hover {
+  background-color: #ECB159;
+  color: #B67352;
+}
+
+@media (max-width: 600px) {
+  .user-login-form {
+    padding: 10px;
+  }
+  .user-login-form input,
+  .user-login-form button {
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.admin-navbar {
+  background-color: #8CB9BD;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.admin-nav-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-nav-item {
+  margin-right: 20px;
+}
+
+.admin-nav-link {
+  text-decoration: none;
+  color: #FEFBF6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 21px;
+}
+
+.admin-nav-link:hover {
+  background-color: #ECB159;
+  color: #B67352;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8CB9BD;
+  min-width: 120px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 8px;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .admin-nav-item {
+    margin-right: 10px;
+  }
+
+  .admin-nav-link {
+    padding: 12px 16px;
+    font-size: 18px;
+  }
+}
+/* Show password checkbox */
+.show-password-checkbox {
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.show-password-checkbox-label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Container */
+.upload-news-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #8CB9BD;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upload-news-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.upload-news-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.upload-news-form input,
+.upload-news-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-news-form input:focus,
+.upload-news-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.upload-news-form button {
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 12px 20px;
+  background-color: #FEFBF6;
+  color: #8CB9BD;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-news-form button:hover {
+  background-color: #ECB159;
+  color: #B67352;
+}
+
+
+.upload-news-container h2 {
+  margin-top: 0;
+  text-align: center; /* Center align only the h2 */
+  font-size: 45px;
+  color: #fff;
+}
+.contact-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #8CB9BD;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.contact-form button {
+  width: 50%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 12px 20px;
+  background-color: #FEFBF6;
+  color: #8CB9BD;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ECB159;
+  color: #B67352;
+}
+
+.contact-form-container h2 {
+  margin-top: 0;
+  text-align: center; /* Center align only the h2 */
+  font-size: 45px;
+  color: #fff;
+}
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Component/Popup.css */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 90px; /* Increased padding for more space inside the box */
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+
+.success-popup {
+  color: #008000; /* Green color for success */
+}
+
+.error-popup {
+  color: #ff0000; /* Red color for error */
+}
+/* >>>>>>>>>>>>>> */
+/* Style for the table */
+/* Style for action buttons */
+/* Button styles */
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style for action buttons on hover */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Style for the toggle button */
+#Toggel {
+  padding: 15px 25px;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the toggle button */
+#Toggel:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style for table header */
+thead {
+  background-color: #f2f2f2;
+}
+
+/* Style for table header cells */
+th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Style for table body cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Style for table body cells in the last row */
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover td {
+  background-color: #f0f0f0; /* Light gray background color on hover */
+}
+
+/* Animation for table row hover effect */
+@keyframes tableRowHover {
+  0% {
+    background-color: #fff; /* Initial background color */
+  }
+  50% {
+    background-color: #ffe6e6; /* Light red color */
+  }
+  100% {
+    background-color: #fff; /* Back to initial background color */
+  }
+}
+
+/* Apply animation to table row hover */
+tbody tr:hover td {
+  animation: tableRowHover 0.5s ease forwards; /* Forward animation on hover */
+}
+
+/* Style for send email button */
+button.send-email {
+  background-color: #007bff; /* Blue color for send email */
+  color: #fff;
+}
+
+/* Style for reject button */
+button.reject {
+  background-color: #ff0000; /* Red color for reject */
+  color: #fff;
+}
+
+.approve {
+  background-color: blue; /* Default color */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.approve.approved {
+  background-color: green; /* Color when approved */
+}
+
+/* Style for deny button */
+button.deny {
+  background-color: #dc3545; /* Red color for deny */
+  color: #fff;
+}
+/* Style for User Request Table heading */
+/* Style for User Request Table heading */
+/* Style for User Request Table heading */
+h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333; /* Dark gray color for heading text */
+  text-align: center; /* Center alignment */
+  background-color: #f2f2f2; /* Light gray background color for heading box */
+  padding: 10px; /* Padding around the heading text */
+  border-radius: 8px; /* Rounded corners for the heading box */
+  font-weight: 900;
+  
+}
+#Toggell{
+  background-color: #a79028; /* Green color for approve */
+  color: #fff;
+}
+.delete {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  background-color: rgb(255, 18, 18); /* Change color on hover */
+}
+/* Style.css<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* Style.css */
+/* Style.css */
+#user-header {
+  background-color: #8CB9BD;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+#user-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#user-header nav ul li {
+  margin-right: 20px;
+  display: inline; /* Set li elements to display inline */
+}
+
+#user-header nav ul li:last-child {
+  margin-right: 0;
+}
+
+#user-header nav ul li a {
+  text-decoration: none;
+  color: #FEFBF6;
+  padding: 15px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 21px;
+}
+
+#user-header nav ul li a:hover {
+  background-color: #ECB159;
+  color: #B67352;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* upload gallery css  */
+
+.upload-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+h5 {
+  display: inline-block; /* Convert the h2 element into a block-level element */
+  padding: 10px 20px; /* Padding around the h2 element */
+  background-color: #f0f0f0; /* Background color for the h2 element */
+  border-radius: 8px; /* Rounded corners for the h2 element */
+  color: rgb(0, 0, 0); /* Text color for the h2 element */
+  font-size: 25px;
+}
+
+.content {
+  text-align: center;
+}
+
+.file-upload-section {
+  margin-bottom: 20px;
+ 
+}
+#fileInput{
+  display: none;
+}
+
+.file-upload-label, .upload-button, .img2 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.file-upload-label:hover, .upload-button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.file-name {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.preview-section {
+  text-align: center;
+}
+
+.preview-image {
+  max-width: 100%;
+  max-height: 300px;
+  margin-top: 20px;
+  border: 2px solid #afbbc7;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.preview-image:hover {
+  transform: scale(1.05);
+}
+
+.photo-change-button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #fff;
+  background-color: red;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.photo-change-button:hover {
+  background-color: #ff0000;
+  border-color: #ff0000;
+}
+
+
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.gallery-container h1 {
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  position: relative;
+  width: 60%; /* Adjust as needed */
+  max-width: 300px; /* Limit maximum width, adjust as needed */
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 auto;
+  width: 100%; /* Adjust as needed */
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: #333;
+  font-size: 16px; /* Reduced font size */
+  cursor: pointer;
+  padding: 8px; /* Reduced padding */
+  z-index: 1;
+}
+
+.slider-btn.prev {
+  left: 0;
+}
+
+.slider-btn.next {
+  right: 0;
+}
+.image-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.image-table th,
+.image-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.image-thumbnail {
+  max-width: 100px;
+  height: auto;
+}
+
+.image-action-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.image-action-button:hover {
+  background-color: #0056b3;
+}
+.image-preview {
+  max-width: 700px; /* Set the maximum width of the preview */
+  max-height: 700px; /* Set the maximum height of the preview */
+  margin-top: 10px; /* Adjust the top margin */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.image-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.full-image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.full-image {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
+.table-container {
+  overflow-x: auto;
+}
+
+.news-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.news-table th, .news-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.news-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.news-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.news-table tr:hover {
+  background-color: #ddd;
+}
+.button3 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button4 {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.user-profile-container {
+  max-width: 800px; /* Adjust as needed */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-profile-container h2 {
+  margin-bottom: 20px;
+}
+
+.user-profile-container form {
+  width: 60%; /* Adjust the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-bottom: 20px; /* Add some space below the form */
+}
+
+.user-profile-container form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.user-profile-container form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.user-profile-container form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.user-profile-container form button:hover {
+  background-color: #0056b3;
+}
+
+.user-profile-container table {
+  width: 100%; /* Make the table take up the full width */
+  border-collapse: collapse;
+}
+
+.user-profile-container th,
+.user-profile-container td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.user-profile-container th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+/* CSS for Edit button */
+button.edit-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* CSS for Edit button hover state */
+button.edit-button:hover {
+  background-color: #45a049;
+}
+
+/* CSS for Edit button when disabled */
+button.edit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+button.save-button {
+  background-color: #1d299b; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* CSS for Edit button hover state */
+button.save-button:hover {
+  background-color: #4a57cc;
+}
+
+/* CSS for Edit button when disabled */
+button.edit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.profile-card {
+  margin: 20px auto;
+  max-width: 500px;
+  
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details {
+  flex-grow: 1;
+}
+
+.user-details label {
+  font-weight: bold;
+}
+
+.user-details input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.user-details input[disabled] {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+}
+.forgot-password-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns the content to the right */
+  margin-top: 10px; /* Adjust this value for desired spacing */
+}
+
+.forgot-password {
+  color: blue; /* Set link color */
+  cursor: pointer; /* Show pointer cursor on hover */
+  text-decoration: underline; /* Underline the text to indicate it's a link */
+  margin-right: 10px; /* Add right margin for spacing */
+}
+.forgot-password-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.forgot-password-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.forgot-password-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password-form button[type="button"] {
+  background-color: #28a745;
+}
+
+.forgot-password-form button[type="submit"] {
+  margin-top: 10px;
+}
+
+.forgot-password-form p {
+  margin: 10px 0;
+}
